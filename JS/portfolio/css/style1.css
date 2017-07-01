@@ -203,7 +203,7 @@ body
 .menu-outer:hover ~ .menu-close {
   margin-right:-100px;
 }
-.menu-outer:hover .bar { background:#404548; }
+.menu-outer:hover .bar { background:#303337; } 
 .menu-outer > nav ul { top:15%; }
 
 /* The rest I chnaged parts but not most of it */
@@ -222,7 +222,7 @@ html, body {
   left: 100%;
   margin-left: -100px;
   height: 200%;
-  background: #404548;  
+  background: #17722c;  /* hamburger triangle */
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   -ms-transition: all ease .5s;
@@ -327,7 +327,7 @@ nav li a:hover {
   right: 100%;
   width: 200px;
   height: 200px;
-  background: rgba(250,130,70,1);
+  background: #17722c; /* green color */
   cursor: pointer;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
