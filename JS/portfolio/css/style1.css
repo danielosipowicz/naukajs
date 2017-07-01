@@ -14,7 +14,7 @@ body
 .header
 {
 	
-	background-color: #4a0d0d;
+	background-color: #303337;
 	height: 100px;
 	width: 100%;
 	position: fixed;	
@@ -23,7 +23,7 @@ body
 .left
 {
 
-	background-color: #e5c8c8;
+	background-color: #303337;
 	float:left;
 	min-height: 500px;
 	width: 10%;
@@ -32,34 +32,103 @@ body
 }
 .right	
 {
-	background-color: #4a1d1d;
+	background-color: #303337;
 	float:right;
 	min-height: 500px;
 	width: 10%;	
 	position: fixed;
+	}
 
-	
+.custome-carousel-control {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  max-height: 100%;
+  filter: alpha(opacity=50);
+  margin-top: 100px;
+  
+}
+
+.custome-carousel-control.left {
+  
+}
+.custome-carousel-control.right {
+  
+	margin-left: 90%;
+}
+
+.custome-carousel-control:hover,
+.custome-carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  
+}
+.custome-carousel-control .icon-prev,
+.custome-carousel-control .icon-next,
+.custome-carousel-control .glyphicon-chevron-left,
+.custome-carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.custome-carousel-control .icon-prev,
+.custome-carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.custome-carousel-control .icon-next,
+.custome-carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.custome-carousel-control .icon-prev,
+.custome-carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  font-family: serif;
+  line-height: 1;
+}
+.custome-carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.custome-carousel-control .icon-next:before {
+  content: '\203a';
 	
 }
+
 .content
 {
-	background-color: #654c4c;
+	background-color: #303337;
 	float:left;
 	min-height: 500px;
 	width: 80%;
-	
 	margin-left: 10%;
 	margin-top: 100px;
 }
 .footer
 {
-	background-color: #3a5d3a;
+	background-color: #303337;
 	width: 100%
 }
 .carousel-control
 {
-	top: 100px;
+	top: 100px;	
 }
+.carousel-control-custome:focus
+{
+	opacity:-20;
+}
+
  #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   float: right;
   width: 60px;
@@ -210,7 +279,7 @@ html, body {
   transition: all ease .5s;
 }
 .menu-outer:hover > .menu-icon {
-  opacity: 60;
+  opacity: 0;
 }
 nav ul {
   position:absolute;
