@@ -1,6 +1,6 @@
 body
 {
-	background-color: #4e3e3e;
+	background-color: #303337;
 	color: white;
 }
 #container
@@ -9,7 +9,9 @@ body
 	margin-right: auto;
 	width:  auto;
 	height: auto;
-	
+	background-color: #303337;
+	z-index: -2;
+	position: fixed;	
 }
 .header
 {
@@ -18,25 +20,31 @@ body
 	height: 100px;
 	width: 100%;
 	position: fixed;	
-	
+	margin: 0 100px;
 }
 .left
 {
 
 	background-color: #303337;
 	float:left;
-	min-height: 500px;
+	height: 0px;
 	width: 10%;
-	position: fixed;
-
+	position: absolute;	
+	
+	
+	
 }
 .right	
 {
 	background-color: #303337;
 	float:right;
-	min-height: 500px;
+	height: 0px;
 	width: 10%;	
-	position: fixed;
+	position: absolute;
+
+	
+	
+	
 	}
 
 .custome-carousel-control {
@@ -45,13 +53,13 @@ body
   bottom: 0;
   left: 0;
   width: 10%;
-  font-size: 20px;
+  font-size: 40px;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   max-height: 100%;
   filter: alpha(opacity=50);
-  margin-top: 100px;
+  margin-top: 20%;
   
 }
 
@@ -112,13 +120,17 @@ body
 	float:left;
 	min-height: 500px;
 	width: 80%;
-	margin-left: 10%;
-	margin-top: 100px;
+	margin: 100px 100px;
 }
 .footer
 {
 	background-color: #303337;
-	width: 100%
+	width: 100%;
+	position: absolute;
+	right: 10%;
+	left: 10%;
+	margin: 0 100px
+	
 }
 .carousel-control
 {
@@ -209,7 +221,7 @@ body
 /* The rest I chnaged parts but not most of it */
 
 html, body {
-  background: rgba(20,20,20,1);
+  background: #303337;
 }
 
 .menu-outer {
@@ -217,7 +229,7 @@ html, body {
   position: fixed;
   top: 0;
   font-family: 'Montserrat', serif;
-  z-index: 998;  
+  z-index: +998;  
   width: 100%;
   left: 100%;
   margin-left: -100px;
@@ -238,6 +250,7 @@ html, body {
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+	
 }
 .menu-outer:hover {
   background: #303337;
@@ -279,11 +292,11 @@ html, body {
   transition: all ease .5s;
 }
 .menu-outer:hover > .menu-icon {
-  opacity: 0;
+  
 }
 nav ul {
   position:absolute;
-  width:100%;
+  width:10%;
   padding: 0;
   left: 10%;; /*prevents possible click when not oppened*/
   -webkit-transition: all ease .5s;
@@ -291,6 +304,7 @@ nav ul {
   -ms-transition: all ease .5s;
   -o-transition: all ease .5s;
   transition: all ease .5s;
+	margin-left: 45%;
 }
 .menu-outer:hover > nav ul {
   left: 0;
@@ -314,7 +328,7 @@ nav li a {
   transition: all ease .5s;
 }
 nav li a:hover {
-  color: rgba(255,255,255,1);
+  color: #17722c;
 }
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
   nav ul {font-size:.75em;}
